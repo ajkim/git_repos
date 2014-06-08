@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href="styles.css" rel="stylesheet" type="text/css"></link>
+<body>
+
+<h1>Ann's GitHub Repositories</h1>
+
+<div id="theDiv"></div>
+
+<script id="this-template" type="text/x-handlebars-template">
+<table>
+  {{#each repos}}
+  <tr>
+    <td>Repo: {{name}}</td>
+    <td>Commits:  {{size}}</td>
+    <td> URL: <a href={{url}}>{{url}}</a></td>
+  </tr>
+  {{/each}}
+</table>
+</script>
+
+<script src="jquery.js"></script>
+<script type="text/javascript" src="handlebars-1.0.rc.1.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
