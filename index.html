@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>GIT DAT</title>
 
     <link href="styles.css" rel="stylesheet" type="text/css"></link>
 <body>
@@ -12,18 +12,28 @@
 <div id="theDiv"></div>
 
 <script id="this-template" type="text/x-handlebars-template">
+<p id="status">Fetching...</p>
 <table>
+  <thead>
+    <tr>
+      <th>Repos</th>
+      <th>Commits</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
   {{#each repos}}
   <tr>
-    <td>Repo: {{name}}</td>
-    <td>Commits:  {{size}}</td>
-    <td> URL: <a href={{url}}>{{url}}</a></td>
+    <td>{{name}}</td>
+    <td>{{size}}</td>
+    <td><a href={{url}}>{{url}}</a></td>
   </tr>
   {{/each}}
+  </tbody>
 </table>
 </script>
 
-<script src="jquery.js"></script>
+<script src="jquery-2.1.1.js"></script>
 <script type="text/javascript" src="handlebars-1.0.rc.1.min.js"></script>
 <script src="app.js"></script>
 

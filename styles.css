@@ -1,13 +1,34 @@
 
 
 body {
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 }
 
-
-
-ul {
-	display: inline-block;
+{
+  color: blue;
 }
+
+thead {
+  border-bottom: 2px;
+  text-align: left;
+}
+
+table {
+	width: 100%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+td, th {
+  padding: 0.5rem;
+}
+
+td {
+  border-bottom: 1px solid pink;
+}
+
+tr:hover {
+  background-color: lightgrey;
+  }
